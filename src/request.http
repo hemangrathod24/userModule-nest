@@ -1,0 +1,41 @@
+### 
+
+POST http://localhost:3000/user/
+content-type: application/json
+
+{
+    "firstName":"mytest1",
+    "lastName":"test",
+    "userName":"stefan@test.com",
+    "gender":"Female",
+    "dob":"2002-05-20"
+}
+
+
+###
+
+GET http://localhost:3000/user?email=demon@test.com
+
+###
+
+
+GET http://localhost:3000/user/demon@test.com
+
+
+###
+GET http://localhost:3000/user/
+
+###
+PATCH  http://localhost:3000/user/beast@test.com
+content-type: application/json
+
+{
+    "firstName":"test",
+    "lastName":"test",
+    "gender":"Female",
+    "dob":"2002-05-20"
+}
+
+
+###
+DELETE  http://localhost:3000/user/beast@test.com
